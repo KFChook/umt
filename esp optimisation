@@ -2,7 +2,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 Rayfield:Notify({
     Title = "UMT - jam.s1",
-    Content = "Script loaded with Optimized Ore ESP + Sell Ore",
+    Content = "Script loaded Optimized Ore ESP",
     Duration = 5
 })
 
@@ -25,12 +25,12 @@ local LocalPlayer = player
 local oreAdornments = {}
 local oreESPEnabled = false
 local showTracers = false
-local maxEspDistance = 200
+local maxEspDistance = 200   -- Default changed to 200
 
 local camera = Workspace.CurrentCamera
 local rootPart = nil
 
--- Throttling for much better FPS (30 updates per second)
+-- Throttling for better FPS
 local ESP_UPDATE_RATE = 1/30
 local lastEspUpdate = 0
 
@@ -163,10 +163,10 @@ MiningTab:CreateToggle({
 
 MiningTab:CreateSlider({
     Name = "ESP Max Distance",
-    Range = {50, 5000},
+    Range = {200, 5000},        -- Minimum 200 studs
     Increment = 50,
     Suffix = " studs",
-    CurrentValue = 1000,
+    CurrentValue = 200,         -- Default changed to 200
     Callback = function(v) 
         maxEspDistance = v 
     end
@@ -503,6 +503,6 @@ PlayerTab:CreateToggle({
 
 Rayfield:Notify({
     Title = "Loaded",
-    Content = "Optimized Ore ESP • Better FPS • Old features kept",
+    Content = "Optimized Ore ESP • Default distance now 200 studs",
     Duration = 6
 })
