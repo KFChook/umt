@@ -1,0 +1,7 @@
+-- Universal Game Loader
+local placeId = game.PlaceId
+
+-- Stonks Script Loader
+if placeId == 123456789 then -- Replace with actual Stonks PlaceId
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yourusername/stonks-script/main/stonks.lua"))()
+end
