@@ -3,5 +3,5 @@ local placeId = game.PlaceId
 
 -- Stonks Script Loader
 if placeId == 123456789 then -- Replace with actual Stonks PlaceId
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/yourusername/stonks-script/main/stonks.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KFChook/umt/refs/heads/main/67"))()
 end
