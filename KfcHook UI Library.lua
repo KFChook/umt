@@ -1,8 +1,4 @@
--- ============================================================
--- KFC HOOK UI LIBRARY (Kfc.Hook) - Full Extraction
--- Extracted from KFC_lua_2.txt
--- Desktop + Mobile branches included
--- ============================================================
+
 
 -- ---- Library Global Declaration ----
 getgenv().library = {
